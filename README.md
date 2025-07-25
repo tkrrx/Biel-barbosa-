@@ -1,1 +1,31 @@
-# Biel-barbosa-
+# Biel-barbosa-<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Black Site</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .center-text {
+      font-size: 1.8rem;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-text">
+    Create your own sunshine on a cloudy day
+  </div>
+</body>
+</html>
