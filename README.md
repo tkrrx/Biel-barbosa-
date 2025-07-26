@@ -73,3 +73,71 @@
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>🎰 Mini Slot Machine</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    #slot {
+      font-size: 50px;
+      margin: 20px auto;
+      letter-spacing: 30px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background: gold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #result {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎰 Slot Machine</h1>
+  <div id="slot">🍒🍋🍊</div>
+  <button onclick="play()">GIRAR</button>
+  <div id="result"></div>
+
+  <script>
+    const symbols = ["🍒", "🍋", "🍊", "🍉", "🔔", "⭐", "💎"];
+
+    function play() {
+      const slot = document.getElementById("slot");
+      const result = document.getElementById("result");
+
+      // Gera 3 símbolos aleatórios
+      let a = symbols[Math.floor(Math.random() * symbols.length)];
+      let b = symbols[Math.floor(Math.random() * symbols.length)];
+      let c = symbols[Math.floor(Math.random() * symbols.length)];
+
+      slot.innerText = `${a}${b}${c}`;
+
+      // Verifica o resultado
+      if (a === b && b === c) {
+        result.innerText = "🎉 JACKPOT! Você ganhou!";
+      } else if (a === b || b === c || a === c) {
+        result.innerText = "👏 Quase lá! Duas iguais.";
+      } else {
+        result.innerText = "😢 Tente de novo!";
+      }
+    }
+  </script>
+</body>
+</html>
