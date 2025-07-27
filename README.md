@@ -1,5 +1,3 @@
-<Barbearia> <\TA MUITO MARRENTA<
-<div class="center-text"
 
 <!DOCTYPE html>
 <html lang="pt-BR">
